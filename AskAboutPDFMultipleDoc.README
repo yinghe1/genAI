@@ -1,0 +1,26 @@
+Use this project for genAI learning
+Assuming you have jupyter notebook and python and pip on your PC
+
+Install ollama:
+https://github.com/ollama/ollama/blob/main/README.md
+mac installed at .ollama/models/
+ollama pull llama3.2
+ollama list
+
+# this can serve ollama as rest service, no need if only using jupyter notebook
+export OLLAMA_HOST=0.0.0.0
+ollama serve
+
+later checkout this project interesting: https://github.com/brevdev/notebooks/blob/main/README.md
+
+pip install --upgrade pip
+# Install these before using the notebook, virtual env here is venv
+python -m venv venv
+source venv/bin/activate
+pip install langchain langchain_ollama angchain-community pypdf docarray
+#tell juypter notebook to use a particular python virtual environment
+pip install ipykernel
+python -m ipykernel install --user --name=venv --display-name="venv” 
+# in a local PC folder where you want to have your notebook, run the following, jupyter will run at localhost 8888
+jupyter notebook
+then use the notebook AskAboutPDFMultipleDoc.ipynb and the kernel use venv as the virtual env
