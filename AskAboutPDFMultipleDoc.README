@@ -25,3 +25,5 @@ python -m ipykernel install --user --name=venv --display-name="venv”
 jupyter notebook
 then use the notebook AskAboutPDFMultipleDoc.ipynb and the kernel use venv as the virtual env
 This notebook will load a folder of pdf files and use it as context for the prompt of the LLM
+
+TODO: need to make the documents building to have a better context for prompt query
