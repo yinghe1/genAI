@@ -11,6 +11,15 @@ uvx --python 3.11 open-webui@latest serve
 ```
 uv command list is here https://docs.astral.sh/uv/pip/inspection/
 
+Do the following to add to PATH and environment variable so next time open terminal, you can just run one command:uvx --python 3.11 open-webui@latest serve
+```
+In your home directory, if no .profile, just create one using touch .profile
+then
+echo "source $HOME/.local/bin/env" >>.profile
+echo "export DATA_DIR=~/.open-webui" >>.profile
+```
+open web-ui will be at http://localhost:8080
+
 The following is not needed, docker instruction, TODO update this one
 ```
 brew install --cask docker
