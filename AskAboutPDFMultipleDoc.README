@@ -14,13 +14,13 @@ ollama serve
 later checkout this project interesting: https://github.com/brevdev/notebooks/blob/main/README.md
 
 pip install --upgrade pip
-# Install these before using the notebook, virtual env here is venv
+# Install these before using the notebook, virtual env here is venv, you can name it anything you want
 python -m venv venv
 source venv/bin/activate
-pip install langchain langchain_ollama angchain-community pypdf docarray
+pip install langchain langchain_ollama langchain-community pypdf docarray
 #tell juypter notebook to use a particular python virtual environment
 pip install ipykernel
-python -m ipykernel install --user --name=venv --display-name="venv” 
+python -m ipykernel install --user --name=venv --display-name=venv
 # in a local PC folder where you want to have your notebook, run the following, jupyter will run at localhost 8888
 jupyter notebook
 then use the notebook AskAboutPDFMultipleDoc.ipynb and the kernel use venv as the virtual env
