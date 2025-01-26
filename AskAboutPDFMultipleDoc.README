@@ -5,6 +5,7 @@ Install ollama:
 https://github.com/ollama/ollama/blob/main/README.md
 mac installed at .ollama/models/
 ollama pull llama3.2
+ollama pull znbang/bge:small-en-v1.5-f32
 ollama list
 
 # this can serve ollama as rest service, no need if only using jupyter notebook
