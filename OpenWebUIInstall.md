@@ -1,5 +1,5 @@
-Use docker to run open-webui https://github.com/open-webui/open-webui
-This is the simple web ui that can interact with the LLM https://docs.openwebui.com
+Run open-webui https://github.com/open-webui/open-webui
+This is the simple web ui that can interact with the LLM https://docs.openwebui.com eg. for locally installed LLM
 
 use uv (https://docs.astral.sh/uv/concepts/tools/#including-additional-dependencies, a python package manager) commandline to install
 ```
