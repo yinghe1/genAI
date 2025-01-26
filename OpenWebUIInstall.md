@@ -1,7 +1,7 @@
 Run open-webui https://github.com/open-webui/open-webui
 This is the simple web ui that can interact with the LLM https://docs.openwebui.com eg. for locally installed LLM
 
-use uv (https://docs.astral.sh/uv/concepts/tools/#including-additional-dependencies, a python package manager) commandline to install documented in "Installation with uv" in https://docs.openwebui.com because if local python 3 is 3.13, cannot use pip to install open-webui
+use uv (https://docs.astral.sh/uv/concepts/tools/#including-additional-dependencies, a python package manager) commandline to install documented in "Installation with uv" in https://docs.openwebui.com because if local python 3 is 3.13, cannot use pip to install open-webui, only supported 3.11 python as of 01/25/2025
 ```
 curl -LsSf https://astral.sh/uv/install.sh | sh
 source $HOME/.local/bin/env (sh, bash, zsh)
