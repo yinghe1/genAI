@@ -20,6 +20,14 @@ echo "export DATA_DIR=~/.open-webui" >>.profile
 ```
 open web-ui will be at http://localhost:8080
 
+Once you finish the installation once, in the future, you only need to:
+```
+1. start it
+uvx --python 3.11 open-webui@latest serve
+2. access it
+http://localhost:8080
+```
+
 The following is not needed, docker instruction, TODO update this one
 ```
 brew install --cask docker
