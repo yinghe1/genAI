@@ -10,6 +10,7 @@ export DATA_DIR=~/.open-webui
 uvx --python 3.11 open-webui@latest serve
 ```
 uv command list is here https://docs.astral.sh/uv/pip/inspection/
+You can use uv to manage multiple python version in your local environment see this doc for details https://docs.astral.sh/uv/concepts/python-versions/ this is needed when sometimes the software only works on certain version of python
 
 Do the following to add to PATH and environment variable so next time open terminal, you can just run one command:uvx --python 3.11 open-webui@latest serve
 ```
