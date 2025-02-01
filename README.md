@@ -11,3 +11,4 @@ Reference learning material:
 - https://python.langchain.com/docs/introduction/ langchain is must learn tooling
 - https://huggingface.co resource for learning
 - Other tooling has Microsoft Azure and Google's vertex ai studio are competitive with amazon bedrock, will update if there are more useful info
+- https://www.kaggle.com has many jupyter notebook sharing code with data, a good learning resource
