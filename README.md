@@ -12,3 +12,10 @@ Reference learning material:
 - https://huggingface.co resource for learning
 - Other tooling has Microsoft Azure and Google's vertex ai studio are competitive with amazon bedrock, will update if there are more useful info
 - https://www.kaggle.com has many jupyter notebook sharing code with data, a good learning resource
+
+Tooling:
+- https://code.visualstudio.com use vscode as local code editor, copilot comes free to use (it is using my github sign-in account, signup for github then use that username)
+
+For Fun:
+- https://labs.google/fx/ google's music fx and imagefx is pretty good, this playground is free using gmail account. another good image ai generator is adobe's firefly but requires fee. google main page https://labs.google
+- MORE to come
