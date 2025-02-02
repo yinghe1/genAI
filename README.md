@@ -3,6 +3,8 @@ Will share jupyter notebook
 Each notebookName.README will have background info and reference doc
 
 Reference learning material:
+- python basic learning recommends: Python for Data Analysis: Data Wrangling with Pandas, NumPy, and IPython 2nd Edition
+by Wes McKinney https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp/1491957662
 - openai's github resource https://github.com/openai/openai-cookbook?tab=readme-ov-file https://cookbook.openai.com has a lot of learning material
 - amazon's bedrock(released 04/2023) https://github.com/aws-samples/amazon-bedrock-workshop  tutorial with notebook details and this one has detailed basic knowledge tutorial https://catalog.us-east-1.prod.workshops.aws/amazon-bedrock/en-US
 - main amazon AI/ML workshops https://workshops.aws/categories/AI%2FML
