@@ -10,5 +10,7 @@ This file has steps to build the git cloned Flowise on the local machine.
   - "flowise-components": "file:../components",
   - "flowise-ui": "file:../ui",
   - run pnpm install then npm run build in each of the packages/server packages/components pacakges/ui 
-- then at root run npm install —verbose 
+- then at root run npm install —verbose
+- npx flowise start --FLOWISE_USERNAME=user --FLOWISE_PASSWORD=1234
+- flowise will be live at http://localhost:3000
 - https://www.youtube.com/watch?v=PLuSfAkOHOA watch this to build a simple RAG agent using LLM
