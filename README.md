@@ -17,7 +17,8 @@ by Wes McKinney https://www.amazon.com/Python-Data-Analysis-Wrangling-IPython/dp
 
 Tooling:
 - https://code.visualstudio.com use vscode as local code editor, copilot comes free to use (it is using my github sign-in account, signup for github then use that username). Use Ctrl+Shift+P to export/import copilot chat so dev can share code prompt
-- 
+- Low code Drag & drop UI to build your customized LLM flow: Install flowise https://github.com/FlowiseAI/Flowise -- this is a great tool to create agent, multiple agent with all integration components out of the box, user can focus on design and drag and drop to configure the LLM workflow
+- TODO langflow https://github.com/langflow-ai/langflow compete with flowise
 
 For Fun:
 - https://labs.google/fx/ google's music fx and imagefx is pretty good, this playground is free using gmail account. another good image ai generator is adobe's firefly but requires fee. google main page https://labs.google
