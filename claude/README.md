@@ -1,0 +1,3 @@
+The best coding AI assistant developed by anthropic. claude code is a cli (command line interface) that can completely integrete with your IDE eg. vscode to write code. Seems only needs human for feedback. Gemini cli I haven't explored, might be competitive.
+- https://anthropic.skilljar.com offers FREE course with completion certificate. I will document each course I took and the notes with images
+- https://www.anthropic.com/engineering/claude-code-best-practices Best Practice from anthropic
