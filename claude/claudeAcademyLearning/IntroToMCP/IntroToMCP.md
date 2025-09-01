@@ -1,4 +1,5 @@
-This one contains notes to https://anthropic.skilljar.com/introduction-to-model-context-protocol 
+This one contains notes to the course: Introduction to model context Protocol https://anthropic.skilljar.com/introduction-to-model-context-protocol
+ 
 - MCP main client server chart
 ![MCP main client server chart](img/MCPMainChart.png)
 
