@@ -1,0 +1,72 @@
+This file contains notes to Anthropic Claude guide: https://www.anthropic.com/engineering/claude-code-best-practices
+
+Useful links:
+https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prompt-improver#improved-prompt
+Mermaid | Diagramming and charting tool Mermaid https://mermaid.js.org
+
+Use custom slash commands
+https://cli.github.com/manual/gh_issue_view needs to be a GitHub issue 
+Let claude read it, create Pull request directly for code review to automate
+
+Try these workflow:
+
+a. Explore, plan, code, commit
+These specific phrases are mapped directly to increasing levels of thinking budget in the system: "think" < "think hard" < "think harder" < "ultrathink." 
+b. Write tests, commit; code, iterate, commit
+c. Write code, screenshot result, iterate — it can take screenshot and fix
+d. Safe YOLO mode
+claude --dangerously-skip-permissions — This works well for workflows like fixing lint errors or generating boilerplate code. Do it only in a container without internet. There is guide reference implementation
+e. Codebase Q&A
+f. Use Claude to interact with git
+g. Use Claude to interact with GitHub
+h. Use Claude to work with Jupyter notebooks
+have Claude Code and a .ipynb file open side-by-side in VS Code
+make the notebook or its data visualizations “aesthetically pleasing” 
+
+Optimize your workflow
+
+a. Be specific in your instructions read the samples provided, helpful
+b. Give Claude images - you can paste image directly to command prompt and give instructions, drag and drop or give file path of the image file
+c. Mention files you want Claude to look at or work on
+d. Give Claude URLs
+e. Course correct early and often
+
+These four tools help with course correction:
+* Ask Claude to make a plan before coding. Explicitly tell it not to code until you’ve confirmed its plan looks good.
+* Press Escape to interrupt Claude during any phase (thinking, tool calls, file edits), preserving context so you can redirect or expand instructions.
+* Double-tap Escape to jump back in history, edit a previous prompt, and explore a different direction. You can edit the prompt and repeat until you get the result you're looking for.
+* Ask Claude to undo changes, often in conjunction with option #2 to take a different approach.
+
+f. Use /clear to keep context focused
+g. Use checklists and scratchpads for complex workflows — really like a human coder
+1. Tell Claude to run the lint command and write all resulting errors (with filenames and line numbers) to a Markdown checklist
+  2	Instruct Claude to address each issue one by one, fixing and verifying before checking it off and moving to the next
+h. Pass data into Claude
+Several methods exist for providing data to Claude:
+* Copy and paste directly into your prompt (most common approach)
+* Pipe into Claude Code (e.g., cat foo.txt | claude), particularly useful for logs, CSVs, and large data
+* Tell Claude to pull data via bash commands, MCP tools, or custom slash commands
+	•	Ask Claude to read files or fetch URLs (works for images too)
+5. Use headless mode to automate your infra
+a. Use Claude for issue triage
+b. Use Claude as a linter
+6. Uplevel with multi-Claude workflows
+a. Have one Claude write code; use another Claude to verify
+1. Use Claude to write code
+2. Run /clear or start a second Claude in another terminal
+3. Have the second Claude review the first Claude's work
+4. Start another Claude (or /clear again) to read both the code and review feedback
+  5	Have this Claude edit the code based on the feedback
+b. Have multiple checkouts of your repo
+c. Use git worktrees
+1. Create worktrees: git worktree add ../project-feature-a feature-a
+2. Launch Claude in each worktree: cd ../project-feature-a && claude
+3. Create additional worktrees as needed (repeat steps 1-2 in new terminal tabs)
+
+Some tips:
+* Use consistent naming conventions
+* Maintain one terminal tab per worktree
+* If you’re using iTerm2 on Mac, set up notifications for when Claude needs attention
+* Use separate IDE windows for different worktrees
+* Clean up when finished: git worktree remove ../project-feature-a
+d. Use headless mode with a custom harness
