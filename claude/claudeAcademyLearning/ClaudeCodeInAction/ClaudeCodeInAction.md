@@ -106,7 +106,8 @@ Here's the confusing part:
 1. The stdin input to your commands will change based upon the type of hook being executed (PreToolUse, PostToolUse, Notification, etc)
 2. The tool_input contained in that will differ based upon the tool that was called (in the case of PreToolUse and PostToolUse hooks)
 To handle this challenge, it is recommended to use a hook like this:
-`"PostToolUse": [ // Or "PreToolUse" or "Stop", etc
+```
+"PostToolUse": [ // Or "PreToolUse" or "Stop", etc
   {
     "matcher": "*",
     "hooks": [
@@ -117,6 +118,7 @@ To handle this challenge, it is recommended to use a hook like this:
     ]
   },
 ]`
+```
 
 
 Notice the provided command. It will write the input to this hook to the post-log.json file, which allows you to inspect exactly what would have been fed into your command! This makes it a lot easier for you to understand what data your command should inspect.
